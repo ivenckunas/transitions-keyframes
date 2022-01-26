@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.top {
+  height: 50vh;
+  background-color: blueviolet;
+}
+
+.bottom {
+  height: 50vh;
+  background-color: #fc92e3;
+}
+
+.animation1 {
+  background: #fa4252;
+  position: absolute;
+  top: 15%;
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  transition: all 0.5s ease-out;
+  border-radius: 10px;
+  background-image: url(https://www.clipartmax.com/png/full/108-1087676_close-remove-delete-exit-cross-cancel-trash-comments-close-button-icon-png.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.animation1:hover {
+  background: #91bd3a;
+  transform: rotate(360deg) scale(2);
+  border-radius: 50%;
+  background-image: url(https://www.clipartmax.com/png/full/28-289648_check-mark-checkmark-graphic-clipart-image-black-check-icon-png.png);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  width: 200px;
+}
+.animation2 {
+  position: absolute;
+  top: 60%;
+  left: 45%;
+  animation: shake 2.5s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg) scale(1.8);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  53% {
+    transform: rotate(15deg);
+  }
+  56% {
+    transform: rotate(-15deg);
+  }
+  57% {
+    transform: rotate(15deg);
+  }
+  59% {
+    transform: rotate(15deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg) scale(0);
+  }
+}
